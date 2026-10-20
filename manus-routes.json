@@ -1,0 +1,1 @@
+{"routes":[{"path":"/","title":"CREDENCE — Trust, Before Access."},{"path":"/signin","title":"Sign in — CREDENCE"},{"path":"/signup","title":"Create a demo identity — CREDENCE"},{"path":"/dashboard","title":"Trust desk — CREDENCE"},{"path":"/modules/:slug","title":"CREDENCE platform module"}]}

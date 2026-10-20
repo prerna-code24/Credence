@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2B2B2B">
+  <meta name="description" content="CREDENCE makes agent trust and access decisions legible before permissions are granted.">
+  <script>try{const saved=localStorage.getItem('credence-theme');document.documentElement.dataset.theme=saved==='light'||saved==='dark'?saved:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme='light'}</script>
+  <title>{% block title %}CREDENCE — Trust, Before Access.{% endblock %}</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='credence-mark.svg') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/credence.css') }}">
+  {% block head %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+  {% block body %}{% endblock %}
+  <div class="prototype-ribbon" role="note"><span class="ribbon-dot"></span>SYNTHETIC DATA · PROTOTYPE</div>
+  <script src="{{ url_for('static', filename='js/theme.js') }}" defer></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

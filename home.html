@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %}CREDENCE — Trust, Before Access.{% endblock %}
+{% block body_class %}landing-page{% endblock %}
+{% block body %}
+<header class="site-header" id="top">
+  <a class="brand-lockup" href="/" aria-label="CREDENCE home"><span class="brand-mark"><i></i><b></b></span><span>CREDENCE</span></a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="#approach">Approach</a><a href="#modules">Platform</a><a href="#evidence">Evidence</a>
+  </nav>
+  <div class="site-actions"><button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme"><span class="theme-toggle-icon" aria-hidden="true">◐</span><span class="theme-toggle-label">Dark theme</span></button><a class="nav-signin" href="/signin">Sign in</a><a class="button button-dark button-small" href="/signin">Get started <span aria-hidden="true">↗</span></a></div>
+</header>
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-field" aria-hidden="true">
+      <svg class="hero-orbits" viewBox="0 0 1100 650" role="presentation">
+        <ellipse cx="550" cy="330" rx="430" ry="178" transform="rotate(-15 550 330)"/>
+        <ellipse cx="550" cy="330" rx="310" ry="122" transform="rotate(21 550 330)"/>
+        <ellipse cx="550" cy="330" rx="195" ry="74" transform="rotate(-7 550 330)"/>
+        <path class="trail trail-one" d="M110 403 C263 144 450 575 631 281 S913 205 1008 349"/>
+        <path class="trail trail-two" d="M163 208 C341 395 408 119 622 200 S795 479 964 264"/>
+      </svg>
+      <span class="hero-node node-a"><i></i><b>agent / atlas-07</b></span>
+      <span class="hero-node node-b"><i></i><b>scope · ledger.read</b></span>
+      <span class="hero-node node-c"><i></i><b>evidence / 24 signals</b></span>
+      <span class="hero-node node-d"><i></i><b>decision · scoped</b></span>
+      <span class="fragment fragment-a">ACCESS<br>RECORD <b>014</b></span>
+      <span class="fragment fragment-b"><i>—</i> permission delta<br> <b>− 2 scopes</b></span>
+      <span class="orbit-core"><span class="core-ring"></span><span class="core-stamp">C</span></span>
+      <span class="agent-orbit orbit-1">A</span><span class="agent-orbit orbit-2">↗</span><span class="agent-orbit orbit-3">R</span>
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="eyebrow-line"></span>THE TRUST LAYER FOR AI AGENTS</p>
+      <h1 id="hero-title">CREDENCE</h1>
+      <p class="hero-thesis">Trust, <em>before</em><br>access.</p>
+      <p class="hero-description">A clearer way to assess agent behaviour, weigh evidence, and grant only the access that has been earned.</p>
+      <div class="hero-ctas"><a class="button button-dark" href="#approach">Explore platform <span aria-hidden="true">↓</span></a><a class="button button-outline" href="/signin">Get started <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-footnote"><span class="mono">01 / 03</span><span>Identity · Evidence · Permission</span></div>
+    </div>
+    <div class="hero-side-note">A HUMAN-GOVERNED ACCESS STANDARD <span>—&nbsp; EST. FOR AGENTIC SYSTEMS</span></div>
+    <a class="scroll-cue" href="#approach"><span></span>SCROLL TO EXAMINE</a>
+  </section>
+
+  <section class="thesis-section section-pad" id="approach">
+    <div class="section-index"><span>01</span><span class="index-rule"></span><span>THE QUESTION</span></div>
+    <div class="thesis-grid">
+      <div><p class="eyebrow">AUTONOMY MOVED FASTER THAN ASSURANCE</p><h2>Capability is not<br><em>credibility.</em></h2></div>
+      <div class="thesis-copy"><p>Agents now cross systems, handle sensitive work, and delegate tools. Yet access is still granted as if identity alone were enough.</p><p>CREDENCE brings behaviour, evidence freshness, scope, and volatility into one readable decision—so teams can pause before permission becomes exposure.</p><a class="text-link" href="#evidence">See how trust is assessed <span>↘</span></a></div>
+    </div>
+    <div class="problem-strip"><span>THE OLD MODEL</span><div class="old-model"><b>Identity</b><i>+</i><b>Static role</b><i>=</i><strong>Access</strong></div><div class="new-model"><span>THE CREDENCE MODEL</span><b>Identity <i>+</i> Behaviour <i>+</i> Evidence <i>+</i> Human judgement</b><i class="new-arrow">→</i><strong>Proportionate access</strong></div></div>
+  </section>
+
+  <section class="trust-section section-pad" id="evidence">
+    <div class="section-index"><span>02</span><span class="index-rule"></span><span>ASSESSMENT, MADE LEGIBLE</span></div>
+    <div class="section-heading-row"><div><p class="eyebrow">NOT A BLACK BOX</p><h2>Trust has a<br><em>paper trail.</em></h2></div><p class="section-intro">Every score is a summary of inspectable signals. Confidence stays separate. When the evidence is thin, the system says so.</p></div>
+    <div class="trust-lab">
+      <div class="lab-graph">
+        <div class="lab-topline"><span class="mono">LIVE TRUST GRAPH</span><span class="live-tag"><i></i> SYNTHETIC / ACTIVE</span></div>
+        <svg class="trust-map" viewBox="0 0 600 370" role="img" aria-label="Interactive graph connecting a synthetic agent, evidence, scope, and resource">
+          <path class="map-edge edge-a" d="M122 181 C191 118 216 96 292 91"/><path class="map-edge edge-b" d="M122 181 C200 236 207 285 293 286"/><path class="map-edge edge-c" d="M319 91 C409 111 416 149 484 181"/><path class="map-edge edge-d" d="M319 286 C405 264 415 223 484 181"/><path class="map-edge edge-e" d="M122 181 C279 169 344 173 484 181"/>
+          <g class="map-node node-agent" tabindex="0" role="button" aria-pressed="false" aria-label="Agent Atlas Ledger"><circle cx="122" cy="181" r="42"/><text x="122" y="177" text-anchor="middle">AGENT</text><text x="122" y="193" text-anchor="middle" class="svg-bold">ATLAS</text></g>
+          <g class="map-node node-evidence" tabindex="0" role="button" aria-pressed="false" aria-label="Evidence signals"><circle cx="306" cy="91" r="32"/><text x="306" y="88" text-anchor="middle">24</text><text x="306" y="103" text-anchor="middle">SIGNALS</text></g>
+          <g class="map-node node-scope" tabindex="0" role="button" aria-pressed="false" aria-label="Permission scope"><circle cx="306" cy="286" r="32"/><text x="306" y="283" text-anchor="middle">02</text><text x="306" y="298" text-anchor="middle">SCOPES</text></g>
+          <g class="map-node node-resource" tabindex="0" role="button" aria-pressed="false" aria-label="Ledger resource"><circle cx="484" cy="181" r="42"/><text x="484" y="178" text-anchor="middle">RESOURCE</text><text x="484" y="194" text-anchor="middle" class="svg-bold">LEDGER</text></g>
+          <circle class="edge-pulse pulse-a" r="4"><animateMotion dur="4s" repeatCount="indefinite" path="M122 181 C191 118 216 96 292 91"/></circle><circle class="edge-pulse pulse-b" r="4"><animateMotion dur="5s" repeatCount="indefinite" path="M122 181 C200 236 207 285 293 286"/></circle>
+          <text class="map-caption" x="301" y="185" text-anchor="middle" aria-live="polite" aria-atomic="true">observed, not assumed</text>
+        </svg>
+        <div class="graph-legend"><span><i class="legend-dot mustard"></i>Identity</span><span><i class="legend-dot cream"></i>Evidence</span><span><i class="legend-line"></i>Permission path</span></div>
+      </div>
+      <div class="lab-simulator">
+        <div class="lab-topline"><span class="mono">RISK STUDY / 04 INPUTS</span><span class="mono">MODEL 0.1</span></div>
+        <h3>Change the evidence.<br><em>See the decision move.</em></h3>
+        <p class="lab-explainer">Illustrative risk is a weighted view—not a verdict. Move a signal to inspect its influence.</p>
+        <div class="mini-sliders">
+          <label><span>Scope breadth <b id="home-scope-value">24</b></span><input type="range" min="0" max="100" value="24" id="home-scope"></label>
+          <label><span>Anomaly rate <b id="home-anomaly-value">8</b></span><input type="range" min="0" max="100" value="8" id="home-anomaly"></label>
+          <label><span>Volatility <b id="home-volatility-value">16</b></span><input type="range" min="0" max="100" value="16" id="home-volatility"></label>
+          <label><span>Evidence staleness <b id="home-staleness-value">12</b></span><input type="range" min="0" max="100" value="12" id="home-staleness"></label>
+        </div>
+        <div class="sim-result"><div class="sim-score"><span>ILLUSTRATIVE RISK</span><strong id="home-risk">—</strong></div><div class="sim-decision"><span>TRUST / 100</span><b id="home-trust">—</b></div></div>
+        <p class="sim-confidence" id="home-explanation">Risk = 30% scope + 35% anomalies + 20% volatility + 15% evidence staleness.</p>
+      </div>
+    </div>
+    <p class="formula-line"><span>RISK</span> 30% scope breadth <i>+</i> 35% anomaly rate <i>+</i> 20% volatility <i>+</i> 15% evidence staleness <span class="formula-trust">TRUST = 100 − RISK</span></p>
+  </section>
+
+  <section class="permission-section section-pad" id="permissions">
+    <div class="section-index"><span>03</span><span class="index-rule"></span><span>PERMISSIONS ARE A HUMAN DECISION</span></div>
+    <div class="permission-grid"><div><p class="eyebrow">A RECOMMENDATION IS NOT A GRANT</p><h2>Access should be<br><em>earned, then reviewed.</em></h2></div><div class="permission-body"><p>Scope begins narrow. Recommendations explain the signals behind them. High-impact actions pause for a person—CREDENCE never mistakes a confidence score for consent.</p><div class="permission-sequence"><span><b>01</b> Identify</span><i>→</i><span><b>02</b> Observe</span><i>→</i><span><b>03</b> Recommend</span><i>→</i><span class="sequence-final"><b>04</b> Human review</span></div><a class="button button-dark" href="/signin">Enter the workspace <span>↗</span></a></div></div>
+  </section>
+
+  <section class="modules-section section-pad" id="modules">
+    <div class="section-index"><span>04</span><span class="index-rule"></span><span>THE CREDENCE PLATFORM</span></div>
+    <div class="section-heading-row"><div><p class="eyebrow">EIGHT VIEWS / ONE TRUST RECORD</p><h2>Built for the<br><em>whole decision.</em></h2></div><p class="section-intro">From an agent’s identity to the audit trail, each view answers one practical question before access changes.</p></div>
+    <div class="module-grid">
+      {% for module in modules %}<a class="module-teaser" href="/signin"><span class="module-number">{{ module.number }}</span><span class="module-arrow">↗</span><h3>{{ module.title }}</h3><p>{{ module.summary }}</p><span class="module-bottom">OPEN MODULE <i>→</i></span></a>{% endfor %}
+    </div>
+  </section>
+
+  <section class="final-cta section-pad"><div class="cta-stamp"><span>TRUST<br>RECORD</span><b>C</b></div><div><p class="eyebrow">BEFORE THE NEXT PERMISSION</p><h2>Make the decision<br><em>legible.</em></h2></div><div class="cta-action"><p>See what the evidence supports.<br>Keep the final say human.</p><a href="/signin" class="button button-cream">Get started <span>↗</span></a></div></section>
+</main>
+<footer class="site-footer"><a class="brand-lockup" href="#top"><span class="brand-mark"><i></i><b></b></span><span>CREDENCE</span></a><span>TRUST, BEFORE ACCESS.</span><span>Prototype · Synthetic data · No production decisions</span></footer>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/home.js') }}" defer></script>{% endblock %}

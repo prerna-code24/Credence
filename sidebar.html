@@ -1,0 +1,13 @@
+<aside class="sidebar">
+  <a class="sidebar-brand" href="/dashboard"><span class="brand-mark"><i></i><b></b></span><span>CREDENCE<small>TRUST OPERATIONS</small></span></a>
+  <div class="sidebar-workspace"><span class="workspace-avatar">C</span><span><b>Trust workspace</b><small>synthetic environment</small></span><i>⌄</i></div>
+  <nav class="sidebar-nav" aria-label="Workspace modules">
+    <span class="sidebar-label">REVIEW</span>
+    <a class="side-link {% if not active_module %}active{% endif %}" href="/dashboard"><span class="side-icon">⌂</span><span>Trust desk</span><span class="side-shortcut">↵</span></a>
+    {% for module in modules %}
+    {% if loop.index == 5 %}<span class="sidebar-label section-label">TOOLS & RECORDS</span>{% endif %}
+    <a class="side-link {% if active_module and active_module.slug == module.slug %}active{% endif %}" href="/modules/{{ module.slug }}"><span class="side-number">{{ module.number }}</span><span>{{ module.short }}</span>{% if module.slug == 'monitoring' %}<span class="side-unread" aria-label="2 open alerts"></span>{% endif %}</a>
+    {% endfor %}
+  </nav>
+  <div class="sidebar-bottom"><div class="sidebar-human"><span class="human-seal">H</span><div><b>Human review active</b><small>Approvals are explicit</small></div><span class="green-check">✓</span></div><a class="sidebar-home" href="/">← Public overview</a></div>
+</aside>
